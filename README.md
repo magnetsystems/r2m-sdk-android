@@ -19,7 +19,7 @@ The Magnet Mobile Server SDK for Android is licensed under the terms of the [Mag
 
 [Android SDK](http://developer.android.com/tools/index.html), minimally Android 4.1.2, API Level 16.
 
-### Build Android Apps with Android Studio
+### Build Android Apps with the SDK using Android Studio
 
 Inside your Android Studio project, open app/build.grade, add the following lines, and the sdk will be downloaded automatically. 
 ```
@@ -49,7 +49,7 @@ dependencies {
 }
 ```
 
-### Build Android Apps with Eclipse
+### Build Android Apps with the SDK using Eclipse
 
 You need to add the SDK as a library to your project by:
 1. Choose File\Import
