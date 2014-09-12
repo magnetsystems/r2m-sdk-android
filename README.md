@@ -21,6 +21,7 @@ The Magnet Mobile Server SDK for Android is licensed under the terms of the [Mag
 ### Add the Dependency in Your Android Studio Project
 
 Inside your Android Studio project, open app/build.grade, add the following lines, and the sdk will be downloaded automatically. 
+```
 repositories {
 
     maven {
@@ -44,8 +45,8 @@ dependencies {
         transitive = true
         
     }
-    
 }
+```
 
 ### Add the SDK to Your Eclipse Project
 
