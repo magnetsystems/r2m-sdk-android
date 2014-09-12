@@ -51,8 +51,9 @@ dependencies {
 
 ### Build Android Apps with the SDK using Eclipse
 
-You need to add the SDK as a library to your project by:
-1. Choose File\Import
+You need to add the SDK as a library to your Android project by:
+
+1. Choose File\Import from the menu bar.
 2. Select Android\Existing Android Code Into Workspace
 3. Press the Next button.
 4. Press the Browse button.
