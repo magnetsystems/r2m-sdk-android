@@ -6,11 +6,7 @@ This repository contains the rest2mobile SDK for Android. This SDK is a library 
 - Marshaling and unmarshaling JSON data
 - Enforcing type safety by converting JSON data
 
-This SDK is licensed under the terms of the [Magnet Software License Agreement](http://www.magnet.com/resources/tos.html). See [LICENSE](https://github.com/magnetsystems/magnet-sdk-android/blob/master/LICENSE) file for full details.
-
 Documentation for the rest2mobile SDK for Android is hosted at [Magnet rest2mobile wiki] (https://github.com/magnetsystems/rest2mobile/wiki)
 
-# License 
-The Magnet Mobile Server SDK for Android is licensed under the terms of the [Magnet Software License Agreement](http://www.magnet.com/resources/tos.html). See [LICENSE](https://github.com/magnetsystems/magnet-sdk-android/blob/master/LICENSE) file for full details.
-
+This SDK is licensed under the terms of the [Magnet Software License Agreement](http://www.magnet.com/resources/tos.html). See the [LICENSE](https://github.com/magnetsystems/magnet-sdk-android/blob/master/LICENSE) file for full details.
 
