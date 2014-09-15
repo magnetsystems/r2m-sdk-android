@@ -10,4 +10,4 @@ This SDK is licensed under the terms of the [Magnet Software License Agreement](
 
 # Working with the rest2mobile SDK for Android
 
-Documentation for the rest2mobile SDK for Android is hosted at [[Magnet rest2mobile wiki | https://github.com/magnetsystems/rest2mobile/wiki]]
+Documentation for the rest2mobile SDK for Android is hosted at [Magnet rest2mobile wiki] (https://github.com/magnetsystems/rest2mobile/wiki)
