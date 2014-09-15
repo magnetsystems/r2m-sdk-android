@@ -88,4 +88,5 @@ Build your app with ANT:
 
     $ ant clean debug
     
-### [Javadoc]:(https://magnetsystems.github.io/r2m-sdk-android/reference/com/magnet/android/mms/MagnetMobileClient.html)
+### Document:
+[Javadoc]:(https://magnetsystems.github.io/r2m-sdk-android/reference/com/magnet/android/mms/MagnetMobileClient.html)
