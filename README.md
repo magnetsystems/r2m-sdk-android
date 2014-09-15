@@ -90,6 +90,6 @@ Build your app with ANT:
     
 ### Document:
 
-[Javadoc]:(https://magnetsystems.github.io/r2m-sdk-android/reference/com/magnet/android/mms/MagnetMobileClient.html)
+[Javadoc]:(https://magnetsystems.github.io/r2m-sdk-android/reference/com/magnet/android/mms/MagnetMobileClient.html).
 
 
