@@ -9,9 +9,9 @@ This repository contains the rest2mobile SDK for Android. This SDK is a library 
 If you're using rest2mobile with Android Studio or IntelliJ IDEA using Gradle, you don't have to download the SDK. Gradle allows you to specify the SDK as a Maven repository in your build file. Using the SDK with Android Studio or IntelliJ IDEA is described in the topic [Set Up Android Studio](https://github.com/magnetsystems/rest2mobile/wiki/rest2mobile-setup-studio).
 
 If you're using rest2mobile with Eclipse or Ant, download the zip file containing the SDK by clicking **Download ZIP** on the right side of the code view for this repository. Next, follow the instructions in the topic 
-[Set Up Eclipse or Ant](https://github.com/magnetsystems/rest2mobile/wiki/rest2mobile-setup-eclipse-ant).
+[Set Up Eclipse or Ant](https://github.com/magnetsystems/rest2mobile/wiki/rest2mobile-setup-eclipse-ant) in the Magnet rest2mobile wiki.
 
-Detailed documentation for the rest2mobile is available on the [Magnet rest2mobile wiki]
+Detailed documentation for all of rest2mobile is available on the [Magnet rest2mobile wiki]
 (https://github.com/magnetsystems/rest2mobile/wiki) site.
 
 This SDK is licensed under the terms of the [Magnet Software License Agreement](http://www.magnet.com/resources/tos.html). See the [LICENSE](https://github.com/magnetsystems/magnet-sdk-android/blob/master/LICENSE) file for full details.
