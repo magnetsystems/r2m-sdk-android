@@ -14,5 +14,7 @@ If you're using rest2mobile with Eclipse or Ant, download the zip file containin
 Detailed documentation for all of rest2mobile is available on the [Magnet rest2mobile wiki]
 (https://github.com/magnetsystems/rest2mobile/wiki) site.
 
+Javadoc of the SDK is available [here](https://magnetsystems.github.io/r2m-sdk-android/reference/com/magnet/android/mms/MagnetMobileClient.html).
+
 This SDK is licensed under the terms of the [Magnet Software License Agreement](http://www.magnet.com/resources/tos.html). See the [LICENSE](https://github.com/magnetsystems/magnet-sdk-android/blob/master/LICENSE) file for full details.
 
