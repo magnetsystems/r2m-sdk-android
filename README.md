@@ -30,5 +30,5 @@ android {
 }
 </pre>
 
-Online reference for the Lint Error:
+Another workaround available online:
 [http://stackoverflow.com/questions/16184109/using-twitter4j-in-android-getting-lint-error-in-library-invalid-package-refe](http://stackoverflow.com/questions/16184109/using-twitter4j-in-android-getting-lint-error-in-library-invalid-package-refe)
