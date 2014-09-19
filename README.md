@@ -18,3 +18,18 @@ Javadoc of the SDK is available [here](https://magnetsystems.github.io/r2m-sdk-a
 
 This SDK is licensed under the terms of the [Magnet Software License Agreement](http://www.magnet.com/resources/tos.html). See the [LICENSE](https://github.com/magnetsystems/magnet-sdk-android/blob/master/LICENSE) file for full details.
 
+## Known Issues
+During "gradle build", the Lint Error "InvalidPackage: Package not included in Android" may appear.
+In order to work around it, you may include the following code snippet in app/build.gradle of your Android Studio project.
+<code>
+android {
+...
+    lintOptions {
+        abortOnError false
+    }
+...
+}
+</code>
+
+Online reference for the Lint Error:
+[http://stackoverflow.com/questions/16184109/using-twitter4j-in-android-getting-lint-error-in-library-invalid-package-refe](http://stackoverflow.com/questions/16184109/using-twitter4j-in-android-getting-lint-error-in-library-invalid-package-refe)
