@@ -21,6 +21,7 @@ This SDK is licensed under the terms of the [Magnet Software License Agreement](
 ## Known Issues
 During "gradle build", the Lint Error "InvalidPackage: Package not included in Android" may appear.
 In order to work around it, you may include the following code snippet in app/build.gradle of your Android Studio project.
+
 <code>
 android {
 ...
