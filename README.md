@@ -22,15 +22,13 @@ This SDK is licensed under the terms of the [Magnet Software License Agreement](
 During "gradle build", the Lint Error "InvalidPackage: Package not included in Android" may appear.
 In order to work around it, you may include the following code snippet in app/build.gradle of your Android Studio project.
 
-<code>
+<pre>
 android {
     lintOptions {
-    
         abortOnError false
-        
     }
 }
-</code>
+</pre>
 
 Online reference for the Lint Error:
 [http://stackoverflow.com/questions/16184109/using-twitter4j-in-android-getting-lint-error-in-library-invalid-package-refe](http://stackoverflow.com/questions/16184109/using-twitter4j-in-android-getting-lint-error-in-library-invalid-package-refe)
