@@ -24,11 +24,17 @@ In order to work around it, you may include the following code snippet in app/bu
 
 <code>
 android {
+
 ...
+
     lintOptions {
+    
         abortOnError false
+        
     }
+    
 ...
+
 }
 </code>
 
