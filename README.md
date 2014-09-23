@@ -6,7 +6,7 @@ This repository contains the rest2mobile SDK for Android. This SDK is a library 
 - Marshalling and unmarshalling JSON data
 - Enforcing type safety by converting JSON data
 
-If you're using rest2mobile with Android Studio or IntelliJ IDEA using Gradle, you don't have to download the SDK. Gradle allows you to specify the SDK as a Maven repository in your build file. Using the SDK with Android Studio or IntelliJ IDEA is described in the topic [Set Up Android Studio](https://github.com/magnetsystems/rest2mobile/wiki/rest2mobile-setup-studio).
+If you're using rest2mobile with Android Studio or IntelliJ IDEA using Gradle, you don't have to download the SDK. Gradle allows you to specify the SDK as a Maven repository in your build file. Using the SDK with Android Studio or IntelliJ IDEA is described in the topic [Set Up Android Studio](https://developer.magnet.com/android/).
 
 If you're using rest2mobile with Eclipse or Ant, download the zip file containing the SDK by clicking **Download ZIP** on the right side of the code view for this repository. Next, follow the instructions in the topic 
 [Set Up Eclipse or Ant](https://github.com/magnetsystems/rest2mobile/wiki/rest2mobile-setup-eclipse-ant) in the Magnet rest2mobile wiki.
@@ -30,5 +30,4 @@ android {
 }
 </pre>
 
-Another workaround available online:
-[http://stackoverflow.com/questions/16184109/using-twitter4j-in-android-getting-lint-error-in-library-invalid-package-refe](http://stackoverflow.com/questions/16184109/using-twitter4j-in-android-getting-lint-error-in-library-invalid-package-refe)
+Another [workaround available online](http://stackoverflow.com/questions/16184109/using-twitter4j-in-android-getting-lint-error-in-library-invalid-package-refe).
