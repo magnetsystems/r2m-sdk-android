@@ -3,7 +3,7 @@
 This repository contains the rest2mobile SDK for Android. This SDK is a library of classes that support rest2mobile code generation, REST requests, and JSON handling. The library support the following functions: 
 - Connecting asynchronously to the REST server
 - Building the REST request URL and HTTP headers
-- Marshaling and unmarshaling JSON data
+- Marshalling and unmarshalling JSON data
 - Enforcing type safety by converting JSON data
 
 If you're using rest2mobile with Android Studio or IntelliJ IDEA using Gradle, you don't have to download the SDK. Gradle allows you to specify the SDK as a Maven repository in your build file. Using the SDK with Android Studio or IntelliJ IDEA is described in the topic [Set Up Android Studio](https://github.com/magnetsystems/rest2mobile/wiki/rest2mobile-setup-studio).
