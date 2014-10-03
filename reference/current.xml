@@ -162,17 +162,6 @@
  visibility="public"
 >
 </method>
-<method name="getResultTime"
- return="java.util.Date"
- abstract="true"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
 <method name="getState"
  return="com.magnet.android.mms.async.Call.State"
  abstract="true"
@@ -251,6 +240,126 @@
 >
 </method>
 </class>
+<class name="CallImpl"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="com.magnet.android.mms.async.Call">
+</implements>
+<implements name="java.lang.Runnable">
+</implements>
+<method name="cancel"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="mayInterruptIfRunning" type="boolean">
+</parameter>
+</method>
+<method name="dispose"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="dispose"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clearResult" type="boolean">
+</parameter>
+</method>
+<method name="get"
+ return="T"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="ExecutionException" type="java.util.concurrent.ExecutionException">
+</exception>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method name="getCause"
+ return="java.lang.Throwable"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getState"
+ return="com.magnet.android.mms.async.Call.State"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isCancelled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isDone"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="resend"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
 <interface name="StateChangedListener"
  abstract="true"
  static="false"
@@ -314,7 +423,7 @@
 >
 <implements name="java.io.Serializable">
 </implements>
-<constructor name="ProgressData"
+<constructor name="StateChangedListener.ProgressData"
  type="com.magnet.android.mms.async.StateChangedListener.ProgressData"
  static="false"
  final="false"
@@ -352,6 +461,151 @@
  visibility="public"
 >
 </field>
+</class>
+</package>
+<package name="com.magnet.android.mms.exception"
+>
+<class name="HttpCallException"
+ extends="java.util.concurrent.ExecutionException"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="HttpCallException"
+ type="com.magnet.android.mms.exception.HttpCallException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="original" type="java.lang.Exception">
+</parameter>
+<parameter name="code" type="int">
+</parameter>
+</constructor>
+<method name="getResponse"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getResponseCode"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="MarshallingException"
+ extends="MobileException"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="MarshallingException"
+ type="com.magnet.android.mms.exception.MarshallingException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<constructor name="MarshallingException"
+ type="com.magnet.android.mms.exception.MarshallingException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="e" type="java.lang.Exception">
+</parameter>
+</constructor>
+<constructor name="MarshallingException"
+ type="com.magnet.android.mms.exception.MarshallingException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="getErrorContent"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="SchemaException"
+ extends="MobileException"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="SchemaException"
+ type="com.magnet.android.mms.exception.SchemaException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<constructor name="SchemaException"
+ type="com.magnet.android.mms.exception.SchemaException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cause" type="java.lang.Exception">
+</parameter>
+</constructor>
+<constructor name="SchemaException"
+ type="com.magnet.android.mms.exception.SchemaException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Exception">
+</parameter>
+</constructor>
+<constructor name="SchemaException"
+ type="com.magnet.android.mms.exception.SchemaException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
 </class>
 </package>
 </api>

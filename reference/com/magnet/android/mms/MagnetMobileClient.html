@@ -52,7 +52,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for Magnet Mobile API for Android." />
+  <meta name="description" content="Javadoc API documentation for rest2mobile SDK for Android." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
@@ -60,7 +60,7 @@
   MagnetMobileClient
 
 
-| Magnet Mobile API for Android
+| rest2mobile SDK for Android
 
 </title>
 <link href="../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">Magnet Mobile API for Android</span>
+      <span id="masthead-title">rest2mobile SDK for Android</span>
     
     </div>
     <div id="headerRight">
@@ -148,6 +148,8 @@
   <a href="../../../../com/magnet/android/mms/package-summary.html">com.magnet.android.mms</a></li>
     <li class="api apilevel-">
   <a href="../../../../com/magnet/android/mms/async/package-summary.html">com.magnet.android.mms.async</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../com/magnet/android/mms/exception/package-summary.html">com.magnet.android.mms.exception</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -311,18 +313,26 @@ Summary:
  The following sample shows how to use this class and get a controller instance for making requests:
  <pre>
 
-   MagnetMobileClient magnetClient = MagnetMobileClient.getInstance(context.getApplicationContext());
+ try {
+      MagnetMobileClient magnetClient = MagnetMobileClient.getInstance(context.getApplicationContext());
 
-   // invoke the controller using the generated controller class
-   GoogleDistanceMatrixFactory restFactory = new GoogleDistanceMatrixFactory(magnetClient);
-   GoogleDistanceMatrix restController  = restFactory.obtainInstance();
+      // invoke the controller using the generated controller class
+      GoogleDistanceMatrixFactory restFactory = new GoogleDistanceMatrixFactory(magnetClient);
+      GoogleDistanceMatrix restController  = restFactory.obtainInstance();
 
-   Call<GoogleDistanceMatrixResult> g =  restController.GoogleDistanceMatrix("-52.93", "55.930", null);
-   GoogleDistanceMatrixResult resultDistance = g.get();
+      Call<GoogleDistanceMatrixResult> g =  restController.GoogleDistanceMatrix("-52.93", "55.930", null);
+      GoogleDistanceMatrixResult resultDistance = g.get();
 
-   resultDistance.getOrigin_addresses();
-   resultDistance.getDestination_addresses();
-   resultDistance.getStatus();
+      resultDistance.getOrigin_addresses();
+      resultDistance.getDestination_addresses();
+      resultDistance.getStatus();
+ } catch (SchemaException se) {
+      // please look at <code><a href="../../../../com/magnet/android/mms/exception/SchemaException.html">SchemaException</a></code> for the detail
+ } catch (InterruptedException ie) {
+      // please look at <code>InterruptedException</code> for the detail
+ } catch (ExecutionException ee) {
+      // please look at the message inside the exception for the detail
+ }
  </pre>
 
 </p>
@@ -639,7 +649,7 @@ From class
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad">wait</span>(long arg0, int arg1)
+        <span class="sympad">wait</span>()
         
   </td></tr>
 
@@ -655,7 +665,7 @@ From class
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad">wait</span>(long arg0)
+        <span class="sympad">wait</span>(long arg0, int arg1)
         
   </td></tr>
 
@@ -671,7 +681,7 @@ From class
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad">wait</span>()
+        <span class="sympad">wait</span>(long arg0)
         
   </td></tr>
 

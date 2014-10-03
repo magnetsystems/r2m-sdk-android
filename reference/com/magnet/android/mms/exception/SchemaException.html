@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  StateChangedListener.ProgressData
+  SchemaException
 
 
 | rest2mobile SDK for Android
@@ -146,9 +146,9 @@
                 
     <li class="api apilevel-">
   <a href="../../../../../com/magnet/android/mms/package-summary.html">com.magnet.android.mms</a></li>
-    <li class="selected api apilevel-">
-  <a href="../../../../../com/magnet/android/mms/async/package-summary.html">com.magnet.android.mms.async</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../com/magnet/android/mms/async/package-summary.html">com.magnet.android.mms.async</a></li>
+    <li class="selected api apilevel-">
   <a href="../../../../../com/magnet/android/mms/exception/package-summary.html">com.magnet.android.mms.exception</a></li>
               </ul><br/>
             </div> <!-- end packages -->
@@ -156,27 +156,21 @@
           <div id="classes-nav">
             <ul>
               
-    <li><h2>Interfaces</h2>
-      <ul>
-          <li class="api apilevel-"><a href="../../../../../com/magnet/android/mms/async/Call.html">Call</a>&lt;T&gt;</li>
-          <li class="api apilevel-"><a href="../../../../../com/magnet/android/mms/async/StateChangedListener.html">StateChangedListener</a></li>
-      </ul>
-    </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../../com/magnet/android/mms/async/CallImpl.html">CallImpl</a>&lt;T&gt;</li>
-          <li class="selected api apilevel-"><a href="../../../../../com/magnet/android/mms/async/StateChangedListener.ProgressData.html">StateChangedListener.ProgressData</a></li>
+          <li class="api apilevel-"><a href="../../../../../com/magnet/android/mms/exception/MarshallingException.html">MarshallingException</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../com/magnet/android/mms/exception/SchemaException.html">SchemaException</a></li>
       </ul>
     </li>
               
               
-    <li><h2>Enums</h2>
+              
+    <li><h2>Exceptions</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../../com/magnet/android/mms/async/Call.State.html">Call.State</a></li>
+          <li class="api apilevel-"><a href="../../../../../com/magnet/android/mms/exception/HttpCallException.html">HttpCallException</a></li>
       </ul>
     </li>
-              
               
             </ul><br/>
           </div><!-- end classes -->
@@ -216,12 +210,12 @@
 
 
   
-   
-  
   
   
   
 
+  
+   
   
   
   
@@ -239,18 +233,12 @@ Summary:
 
 
 
-  <a href="#lfields">Fields</a>
+
+
+  <a href="#pubctors">Ctors</a>
   
 
 
-
-  &#124; <a href="#pubctors">Ctors</a>
-  
-
-
-
-  &#124; <a href="#pubmethods">Methods</a>
-  
 
 
 
@@ -274,26 +262,25 @@ Summary:
 
 <div id="jd-header">
     public
-    static 
+     
      
     
     class
-<h1>StateChangedListener.ProgressData</h1>
+<h1>SchemaException</h1>
 
 
 
-  
-    extends <a href="http://d.android.com/reference/java/lang/Object.html">Object</a><br/>
   
   
   
 
   
+    extends MobileException<br/>
   
-      implements 
-      
-        <a href="http://d.android.com/reference/java/io/Serializable.html">Serializable</a> 
-      
+  
+  
+
+  
   
   
 
@@ -308,7 +295,7 @@ Summary:
 
     <tr>
          	
-        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+        <td colspan="3" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
     </tr>
     
 
@@ -316,7 +303,17 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.magnet.android.mms.async.StateChangedListener.ProgressData</td>
+        <td colspan="2" class="jd-inheritance-class-cell">MobileException</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.magnet.android.mms.exception.SchemaException</td>
     </tr>
     
 
@@ -332,8 +329,9 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>This class contains the I/O statistics when the Controller call is being
- executed.
+<p>This class defines schema exceptions that can be thrown from controller initialization.
+ A <code>SchemaException</code> may occur due to missing dependent classes or general Java class loading failures.
+
 </p>
 
 
@@ -379,48 +377,6 @@ Summary:
 
 
 
-<!-- =========== FIELD SUMMARY =========== -->
-<table id="lfields" class="jd-sumtable"><tr><th colspan="12">Fields</th></tr>
-
-
-    
-      <tr class="alt-color api apilevel-" >
-          <td class="jd-typecol">
-          public
-          
-          
-          int</td>
-          <td class="jd-linkcol"><a href="../../../../../com/magnet/android/mms/async/StateChangedListener.ProgressData.html#byteCount">byteCount</a></td>
-          <td class="jd-descrcol" width="100%">Accumulative number of bytes received or sent.</td>
-      </tr>
-      
-    
-      <tr class=" api apilevel-" >
-          <td class="jd-typecol">
-          public
-          
-          
-          boolean</td>
-          <td class="jd-linkcol"><a href="../../../../../com/magnet/android/mms/async/StateChangedListener.ProgressData.html#isReceived">isReceived</a></td>
-          <td class="jd-descrcol" width="100%">True for received data; false  for sent data.</td>
-      </tr>
-      
-    
-      <tr class="alt-color api apilevel-" >
-          <td class="jd-typecol">
-          public
-          
-          
-          int</td>
-          <td class="jd-linkcol"><a href="../../../../../com/magnet/android/mms/async/StateChangedListener.ProgressData.html#totalCount">totalCount</a></td>
-          <td class="jd-descrcol" width="100%">Total number of bytes to be received or sent.</td>
-      </tr>
-      
-    
-
-</table>
-
-
 
 
 
@@ -442,22 +398,29 @@ Summary:
             
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/magnet/android/mms/async/StateChangedListener.ProgressData.html#StateChangedListener.ProgressData()">StateChangedListener.ProgressData</a></span>()
+        <span class="sympad"><a href="../../../../../com/magnet/android/mms/exception/SchemaException.html#SchemaException()">SchemaException</a></span>()
         
+        <div class="jd-descrdiv">Constructs a new <code>SchemaException</code>.</div>
+  
   </td></tr>
 
 
-
-</table>
-
-
-
-
-
-
-<!-- ========== METHOD SUMMARY =========== -->
-<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
-
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/magnet/android/mms/exception/SchemaException.html#SchemaException(java.lang.Exception)">SchemaException</a></span>(<a href="http://d.android.com/reference/java/lang/Exception.html">Exception</a> cause)
+        
+        <div class="jd-descrdiv">Constructs a new <code>SchemaException</code> with the original exception.</div>
+  
+  </td></tr>
 
 
 	 
@@ -468,12 +431,30 @@ Summary:
             
             
             
-            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+            
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/magnet/android/mms/async/StateChangedListener.ProgressData.html#toString()">toString</a></span>()
+        <span class="sympad"><a href="../../../../../com/magnet/android/mms/exception/SchemaException.html#SchemaException(java.lang.String, java.lang.Exception)">SchemaException</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> message, <a href="http://d.android.com/reference/java/lang/Exception.html">Exception</a> cause)
         
-        <div class="jd-descrdiv">The String representation of I/O data in progress.</div>
+        <div class="jd-descrdiv">Constructs a new <code>SchemaException</code> with the given detail message and the original exception.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/magnet/android/mms/exception/SchemaException.html#SchemaException(java.lang.String)">SchemaException</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> message)
+        
+        <div class="jd-descrdiv">Constructs a new <code>SchemaException</code> with the given detail message.</div>
   
   </td></tr>
 
@@ -487,10 +468,16 @@ Summary:
 
 
 
+
+
+
+
 <!-- ========== METHOD SUMMARY =========== -->
 <table id="inhmethods" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
 
 
 <tr class="api apilevel-" >
@@ -694,8 +681,6 @@ From class
 </td></tr>
 
 
-
-
 </table>
 
 
@@ -722,106 +707,6 @@ From class
 <!-- Fields -->
 
 
-<!-- ========= FIELD DETAIL ======== -->
-<h2>Fields</h2>
-
-
-
-
-<a id="byteCount"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        int
-      </span>
-        byteCount
-    </h4>
-      <div class="api-level">
-        
-
-
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Accumulative number of bytes received or sent.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<a id="isReceived"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        boolean
-      </span>
-        isReceived
-    </h4>
-      <div class="api-level">
-        
-
-
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>True for received data; false  for sent data.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<a id="totalCount"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        int
-      </span>
-        totalCount
-    </h4>
-      <div class="api-level">
-        
-
-
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Total number of bytes to be received or sent.  -1 means unknown.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-
 <!-- Public ctors -->
 
 
@@ -830,7 +715,7 @@ From class
 
 
 
-<a id="StateChangedListener.ProgressData()"></a>
+<a id="SchemaException()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -842,7 +727,7 @@ From class
          
         
       </span>
-      <span class="sympad">StateChangedListener.ProgressData</span>
+      <span class="sympad">SchemaException</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
@@ -855,7 +740,135 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Constructs a new <code>SchemaException</code>.
+</p></div>
+
+    </div>
+</div>
+
+
+<a id="SchemaException(java.lang.Exception)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">SchemaException</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/Exception.html">Exception</a> cause)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Constructs a new <code>SchemaException</code> with the original exception.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>cause</th>
+          <td>the original java.lang.Exception.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="SchemaException(java.lang.String, java.lang.Exception)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">SchemaException</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> message, <a href="http://d.android.com/reference/java/lang/Exception.html">Exception</a> cause)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Constructs a new <code>SchemaException</code> with the given detail message and the original exception.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>message</th>
+          <td>the detail message for this <code>SchemaException</code></td>
+        </tr>
+        <tr>
+          <th>cause</th>
+          <td>the original <code><a href="http://d.android.com/reference/java/lang/Exception.html">Exception</a></code>
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="SchemaException(java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">SchemaException</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> message)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Constructs a new <code>SchemaException</code> with the given detail message.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>message</th>
+          <td>the detail message for this <code>SchemaException</code>
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
@@ -871,43 +884,6 @@ From class
 
 <!-- ========= METHOD DETAIL ======== -->
 <!-- Public methdos -->
-
-<h2>Public Methods</h2>
-
-
-
-<a id="toString()"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
-      </span>
-      <span class="sympad">toString</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>The String representation of I/O data in progress.
-</p></div>
-
-    </div>
-</div>
-
-
 
 
 
