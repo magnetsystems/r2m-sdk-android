@@ -37,3 +37,8 @@ To compile the sdk, (after cloning it to your computer) simply execute the follo
 $ cd magnet-library
 $ gradle build
 </pre>
+
+## Copyright
+
+Copyright © 2014 Magnet Systems, Inc. All rights reserved.
+[license]: http://www.apache.org/licenses/LICENSE-2.0
