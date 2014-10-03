@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/res" />
+        <source path="/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/build/generated/res/rs/debug" />
+        <source path="/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/build/generated/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/src/debug/res" />
+    </dataSet>
+
+</merger>

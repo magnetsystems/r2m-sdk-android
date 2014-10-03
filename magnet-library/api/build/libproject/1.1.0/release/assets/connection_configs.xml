@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connection-configs>
+    <connection-config>
+        <name>generic_rest</name>
+        <uri>http://maps.googleapis.com/maps/api/distancematrix</uri>
+        <type>GENERIC_REST</type>
+        <auth-handler-class>com.magnet.android.mms.connection.GenericRestAuthHandler</auth-handler-class>
+        <realm>default</realm>
+    </connection-config>
+    <connection-config>
+        <name>default</name>
+        <uri>http://www.google.com</uri>
+        <type>MAGNET_REST</type>
+        <auth-handler-class>com.magnet.android.mms.connection.MagnetRestAuthHandler</auth-handler-class>
+        <realm>default</realm>
+    </connection-config>
+</connection-configs>

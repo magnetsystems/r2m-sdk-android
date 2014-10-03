@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MagnetTypeMapper>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans.Address_component"
+              magnet_type="Address_component_com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnet.platform.controller.client.api.ConversionNode"
+              magnet_type="ConversionNode_com.magnet.platform.controller.client.api" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleDistance.api.beans.Distance"
+              magnet_type="Distance_com.magnetapi.apps.jumpstart.controllers.GoogleDistance.api.beans" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnet.platform.controller.client.api.DurationNode"
+              magnet_type="DurationNode_com.magnet.platform.controller.client.api" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleDistance.api.beans.Duration"
+              magnet_type="Duration_com.magnetapi.apps.jumpstart.controllers.GoogleDistance.api.beans" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleDistance.api.beans.Element"
+              magnet_type="Element_com.magnetapi.apps.jumpstart.controllers.GoogleDistance.api.beans" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans.Geometry"
+              magnet_type="Geometry_com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.helloworld.api.HelloWorldControllerBean"
+              magnet_type="HelloWorldControllerBean_com.magnetapi.apps.jumpstart.controllers.helloworld.api" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans.Location"
+              magnet_type="Location_com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleDistance.api.beans.MapsApiDistancematrixJsonResult"
+              magnet_type="MapsApiDistancematrixJsonResult_com.magnetapi.apps.jumpstart.controllers.GoogleDistance.api.beans" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans.MapsApiGeocodeJsonResult"
+              magnet_type="MapsApiGeocodeJsonResult_com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans.Northeast"
+              magnet_type="Northeast_com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.bdatatest.api.ProductBean"
+              magnet_type="ProductBean_com.magnetapi.apps.jumpstart.controllers.bdatatest.api" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnet.platform.controller.client.api.QNameNode"
+              magnet_type="QNameNode_com.magnet.platform.controller.client.api" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnet.platform.controller.client.api.ResponseNode"
+              magnet_type="ResponseNode_com.magnet.platform.controller.client.api" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans.Result"
+              magnet_type="Result_com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleDistance.api.beans.Row"
+              magnet_type="Row_com.magnetapi.apps.jumpstart.controllers.GoogleDistance.api.beans" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.bdatatest.api.SimpleBean"
+              magnet_type="SimpleBean_com.magnetapi.apps.jumpstart.controllers.bdatatest.api" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.helloworld.api.SimpleBean"
+              magnet_type="SimpleBean_com.magnetapi.apps.jumpstart.controllers.helloworld.api" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.simplecontroller.api.bean.SimpleEntityBeanId"
+              magnet_type="SimpleEntityBeanId_com.magnetapi.apps.jumpstart.controllers.simplecontroller.api.bean" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.simplecontroller.api.bean.SimpleEntityBean"
+              magnet_type="SimpleEntityBean_com.magnetapi.apps.jumpstart.controllers.simplecontroller.api.bean" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.simplecontroller.api.bean.SimpleEntityValueBean"
+              magnet_type="SimpleEntityValueBean_com.magnetapi.apps.jumpstart.controllers.simplecontroller.api.bean" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans.Southwest"
+              magnet_type="Southwest_com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans" />
+    </java-class>
+
+    <java-class>
+        <item java_name="com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans.Viewport"
+              magnet_type="Viewport_com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.beans" />
+    </java-class>
+
+</MagnetTypeMapper>

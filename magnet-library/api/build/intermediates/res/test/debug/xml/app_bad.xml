@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MagnetAppDefaultSettings>
+    <cache enable_encryption="fals" />
+    <location enable="true"
+              windowInterval="1a0000"
+              windowDuration="10000"
+              accuracy="5"
+              powerRequirement="1"/>
+</MagnetAppDefaultSettings>
+<!-- From: file:/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/src/androidTest/res/xml/app_bad.xml -->

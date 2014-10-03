@@ -1,0 +1,5 @@
+int string test_uri 0x7f030000
+int xml app_bad 0x7f020000
+int xml magnet_app_default 0x7f020001
+int xml magnet_type_mapper 0x7f020002
+int xml magnet_url_mapper 0x7f020003

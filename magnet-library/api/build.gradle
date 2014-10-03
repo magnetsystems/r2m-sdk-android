@@ -1,0 +1,113 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.+'
+    }
+}
+
+apply plugin: 'android-library'
+
+archivesBaseName = 'r2m-sdk-android'
+version = "1.1.0"
+group = "com.magnet"
+
+configurations {
+  provided
+  jaxDoclet
+}
+
+sourceSets {
+  main {
+    compileClasspath += configurations.provided
+    runtimeClasspath += configurations.provided
+  }
+  // this is for the test to compile if it needs jars from provided scope
+  test {
+    compileClasspath += configurations.provided
+    runtimeClasspath += configurations.provided
+  }
+}
+
+dependencies {
+  compile 'com.google.code.gson:gson:2.2.4'
+
+  // for javadoc generation
+  jaxDoclet 'com.google.doclava:doclava:1.0.+'
+
+  }
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+        minSdkVersion 16
+// comment out targetSdkVersion so it doesn't get added to library AndroidManifest.xml
+// to avoid manifest merge problems in Eclipse when the library project is imported
+//    targetSdkVersion rootProject.ext.targetSdkVersion
+
+        testApplicationId "com.magnet.android.mms.tests"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+    }
+    sourceSets {
+        main {
+            // use the default directory structure for source to separate the tests
+            // src/java/main/com/... and src/androidTest/java/com/...
+            // keep manifest, res and assets in old structure for compatibility to Eclipse
+            manifest.srcFile 'AndroidManifest.xml'
+            assets.srcDirs = ['assets']
+            res.srcDirs = ['res']
+
+        }
+    }
+}
+
+task eclipseClean(type: Delete) {
+  delete 'gen'
+  delete 'bin'
+  delete 'src/androidTest/gen'
+  delete 'src/androidTest/bin'
+}
+
+clean.dependsOn eclipseClean
+
+task androidJavadocs(type: Javadoc) {
+    println "generating JAVADOCS task:"
+    println System.getenv('JAVA_HOME')
+    source = sourceSets.main.allJava
+    destinationDir = reporting.file("$projectDir/build/docs")
+    title = null
+    options.docletpath = configurations.jaxDoclet.files.asType(List)
+    options.doclet = "com.google.doclava.Doclava"
+    ext.androidJar = "${System.env.ANDROID_HOME}/platforms/${android.compileSdkVersion}/android.jar"
+    ext.googlePlayServicesJar = "${System.env.ANDROID_HOME}/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar"
+    classpath = files("$buildDir/classes/debug") + files(ext.androidJar) + files(ext.googlePlayServicesJar) + sourceSets.main.compileClasspath
+
+    options {
+        doclet "com.google.doclava.Doclava"
+        addStringOption "hdf project.name", "rest2mobile SDK for Android"
+        addStringOption "federate android", "http://d.android.com/reference"
+        addStringOption "federationxml android", "http://doclava.googlecode.com/svn/static/api/android-10.xml"
+        addStringOption 'XDignore.symbol.file', '-quiet'
+    }
+
+    include '**/mms/MagnetMobileClient.java'
+    include '**/async/Call.java'
+    include '**/async/CallImpl.java'
+    include '**/async/StateChangedListener*'
+    include '**/HttpCallException.java'
+    include '**/MarshallingException.java'
+    include '**/SchemaException.java'
+}
+
+task androidJavadocsZip(type: Zip, dependsOn: androidJavadocs) {
+  classifier = 'javadoc'
+  from androidJavadocs.destinationDir
+}
+
+
+

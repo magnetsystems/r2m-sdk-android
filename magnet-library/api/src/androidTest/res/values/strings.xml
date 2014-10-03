@@ -1,0 +1,3 @@
+<resources>
+    <string name="test_uri">http://localhost:8080</string>
+</resources>

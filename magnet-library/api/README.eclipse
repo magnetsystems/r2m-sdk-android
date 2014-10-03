@@ -1,0 +1,30 @@
+Building "api" Android Project:
+After importing "api" project as an Android project to Eclipse,
+1. Set "src/main/java" as the source directory under Project->Properties, Java Build Path
+2. Add gson-2.1.x.jar and google-play-services.jar from your local drive, under "Libraries" tab.
+2. Build Project
+
+
+Running Android Unit Tests from Eclipse:
+1. Import "androidTest" as existing Android Project to Eclipse
+2. Set "java" as the source directory.
+2. Add "api" project in Java Build Path using Project->Properties
+3. Build Project 
+4. Run as "Android JUnit Test"
+
+
+*** Following is for reference only - currently there are no junit tests in the SDK project
+
+Running junit tests from Eclipse:
+After importing "api" project as an Android project to Eclipse,
+under Project->Properties
+
+- Add this as a source directory, "api/unit-tests/src"
+- Add JUnit4 under Libraries->Add Library
+
+Create a new Run configuration:
++ Add JUnit
+Check "Run all tests in selected project", select "unit-tests/src"
+Test runnder: "JUnit 4"
+Select Test Launcher: "Android JUnit Test Launcher"
+Click on "Run" to run the junit tests

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<MagnetUrlMapping>
+    <item java_method_name="com.magnetapi.controller.test"
+        magnet_url="test_magnet_url"
+        direct_url="test_direct_url"/>
+    <item java_method_name="com.magnetapi.controller.test1"/>
+    <item java_method_name="com.magnetapi.apps.jumpstart.controllers.GoogleDistance.api.GoogleDistance"
+        direct_url="/maps/api/distancematrix/json"/>
+    <item java_method_name="com.magnetapi.apps.jumpstart.controllers.GoogleGeoCode.api.GoogleGeoCode"
+        magnet_url="/GoogleGeoCode/getMapsApiGeocodeJson"/>
+    <!--<item java_method_name="com.magnetapi.controller.HelloWorldController.postHello"-->
+        <!--magnet_url="/hellocontroller/postHello"-->
+        <!--direct_url="/google/api/sayhello" />-->
+</MagnetUrlMapping><!-- From: file:/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/src/androidTest/res/xml/magnet_url_mapper.xml -->

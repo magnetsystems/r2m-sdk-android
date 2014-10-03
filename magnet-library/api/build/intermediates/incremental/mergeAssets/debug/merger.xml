@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/assets" >
+            <file
+                name="connection_configs.xml"
+                path="/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/assets/connection_configs.xml" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/src/debug/assets" />
+    </dataSet>
+
+</merger>

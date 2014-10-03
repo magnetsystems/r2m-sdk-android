@@ -1,6 +1,6 @@
-# rest2mobile SDK for Android
+# rest2mobile SDK for Android, version 1.1.0
 
-This repository contains the rest2mobile SDK for Android. This SDK is a library of classes that support rest2mobile code generation, REST requests, and JSON handling. The library support the following functions: 
+This repository contains the binary and source code of rest2mobile SDK for Android. This SDK is a library of classes that support rest2mobile code generation, REST requests, and JSON handling. The library support the following functions: 
 - Connecting asynchronously to the REST server
 - Building the REST request URL and HTTP headers
 - Marshalling and unmarshalling JSON data
@@ -17,20 +17,23 @@ Detailed documentation for all of rest2mobile is available on the [Magnet rest2m
 
 Javadoc of the SDK is available [here](https://magnetsystems.github.io/r2m-sdk-android/reference/com/magnet/android/mms/MagnetMobileClient.html).
 
-Version 1.0 of the rest2moble Android SDK is licensed under the terms of the [Magnet Software License Agreement](http://www.magnet.com/resources/tos.html). See the [LICENSE](https://github.com/magnetsystems/magnet-sdk-android/blob/master/LICENSE) file for full details.
+## License
 
-Note: The coming release of rest2mobile Android SDK will be available under an Apache v2 license.
+Licensed under the **[Apache License, Version 2.0] [license]** (the "License");
+you may not use this software except in compliance with the License.
 
-### Known Issues
-During "gradle build", the Lint Error "InvalidPackage: Package not included in Android" may appear.
-In order to work around it, you may include the following code snippet in app/build.gradle of your Android Studio project.
-
+## About the sdk source code
+The sdk uses a regular Gradle Android project. You will find the source file in:
+magnet-library/api/main
+ 
+The unit tests in:
+magnet-library/api/androidTest
+ 
+The distribution (compressed zip file) in:
+magnet-library/api/build/distributions
+ 
+To compile the sdk, (after cloning it to your computer) simply execute the following:
 <pre>
-android {
-    lintOptions {
-        abortOnError false
-    }
-}
+$ cd magnet-library
+$ gradle build
 </pre>
-
-Another [workaround available online](http://stackoverflow.com/questions/16184109/using-twitter4j-in-android-getting-lint-error-in-library-invalid-package-refe).

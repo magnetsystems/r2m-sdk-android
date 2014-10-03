@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/build/intermediates/pre-dexed/test/debug/gson-2.2.4-761da240126099dc005d585addbb9600a0775af9.jar"
+        jar="/Users/skwok/.m2/repository-everything/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568"/>
+    <item
+        dex="/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/build/intermediates/pre-dexed/test/debug/classes-dc5a8c6826988ec8a59be3112a7ed070e7d98740.jar"
+        jar="/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/build/intermediates/bundles/debug/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="d9f11143a59e753f0fa1bb1c7e06c9ecfd8b67a3"/>
+
+</pre-dex-items>

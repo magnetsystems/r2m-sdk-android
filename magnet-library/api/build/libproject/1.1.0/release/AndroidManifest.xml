@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.magnet.android.mms"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NEWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application>
+
+        <!--
+             <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+        -->
+
+        <receiver
+            android:name="com.magnet.android.mms.async.constraint.NetworkStateReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.magnet.android.action.NO_ASYNC_PENDING_REQUESTS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.magnet.android.mms.async.AsyncIntentService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.magnet.android.action.RUN_ASYNC" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

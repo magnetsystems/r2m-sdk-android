@@ -1,0 +1,25 @@
+To build using gradle:
+
+1. Download gradle 1.11 (must be the exact version)
+- https://services.gradle.org/distributions/gradle-1.11-bin.zip
+
+2. Download Android Studio
+From Android SDK Manager
+- Google Repository
+- Build tools 19.1.0
+
+
+3. Build the project and run the Android tests:
+(Android tests requires connected device)
+gradle clean connectedCheck build
+
+Build the project without running Android unit tests:
+gradle clean build
+
+
+Optional:
+Generate the HTML javadocs
+gradle androidJavadocs
+
+Generate the zipped javadocs
+gradle androidJavadocsZip

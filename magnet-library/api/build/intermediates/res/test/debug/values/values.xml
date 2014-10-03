@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/skwok/Work/sources/r2m-sdk-android/magnet-library/api/src/androidTest/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="test_uri">http://localhost:8080</string>
+
+</resources>
