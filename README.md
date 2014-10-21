@@ -24,7 +24,7 @@ you may not use this software except in compliance with the License.
 
 ## About the sdk source code
 The sdk uses a regular Gradle Android project. You will find the source file in:
-magnet-library/api/main
+magnet-library/api/src/main
  
 The unit tests in:
 magnet-library/api/androidTest
