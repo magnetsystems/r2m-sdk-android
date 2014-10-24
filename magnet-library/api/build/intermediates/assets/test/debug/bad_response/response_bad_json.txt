@@ -1,1 +1,0 @@
-{ "_string", ["purple", "white", "red", "black"] }
