@@ -13,7 +13,7 @@ apply plugin: 'maven'
 ext {
   compileSdkVersion = 19
   buildToolsVersion = '19.1.0'
-  minSdkVersion = 16
+  minSdkVersion = 15
   targetSdkVersion = 18
   toolsGradleVersion = "0.12.+"
 }

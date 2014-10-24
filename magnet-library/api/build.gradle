@@ -45,7 +45,7 @@ android {
     defaultConfig {
         versionCode 1
         versionName "1.0"
-        minSdkVersion 16
+        minSdkVersion 15
 // comment out targetSdkVersion so it doesn't get added to library AndroidManifest.xml
 // to avoid manifest merge problems in Eclipse when the library project is imported
 //    targetSdkVersion rootProject.ext.targetSdkVersion

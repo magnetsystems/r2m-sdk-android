@@ -18,7 +18,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.magnet.android.mms.tests">
 
-    <uses-sdk android:minSdkVersion="16" />
+    <uses-sdk android:minSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application>
         <uses-library android:name="android.test.runner" />

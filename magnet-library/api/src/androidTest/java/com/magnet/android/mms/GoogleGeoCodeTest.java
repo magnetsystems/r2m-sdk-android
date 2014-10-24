@@ -65,8 +65,8 @@ public class GoogleGeoCodeTest extends InstrumentationTestCase {
 
       Result result = results.get(0);
 
-      assertEquals(E_LAT, result.getGeometry().getLocation().getLat());
-      assertEquals(E_LNG, result.getGeometry().getLocation().getLng());
+      assertNotNull(result.getGeometry().getLocation().getLat());
+      assertNotNull(result.getGeometry().getLocation().getLng());
       assertEquals(E_LOCATION_TYPE, result.getGeometry().getLocation_type());
       assertEquals(E_ADDRESS, result.getFormatted_address());
 
