@@ -17,6 +17,9 @@ Detailed documentation for all of rest2mobile is available on the [Magnet rest2m
 
 Javadoc of the SDK is available [here](https://magnetsystems.github.io/r2m-sdk-android/reference/com/magnet/android/mms/MagnetMobileClient.html).
 
+## Android SDK Versions
+Currently, the SDK requires minSdkVersion to be 15. For more version settings, please refer to [magnet-library/build.gradle](https://github.com/magnetsystems/r2m-sdk-android/blob/master/magnet-library/build.gradle).
+
 ## License
 
 Licensed under the **[Apache License, Version 2.0] [license]** (the "License");
